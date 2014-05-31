@@ -1,0 +1,87 @@
+html * {
+  font-size: 14px; 
+  /* use !important to add weight to the global font definition or define it latter (cascading order)*/
+  font-family: Arial;
+  color: #FFF;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+header,
+nav,
+aside,
+section,
+footer {
+  background: #444;
+}
+
+section > header,
+section > article,
+section > footer {
+  background: #CCC;
+  margin-top: 5px;
+}
+
+.header {
+  font-size: 46px;
+}
+.footer,
+.sidebar {
+  font-size: 10px;
+}
+.content {
+  font-size: 14px;
+}
+.navigation{
+  font-size: 12px;
+}
+
+[class$=r] {
+  background: #F0F;
+}
+
+[class*=a]:not([class$=r]) {
+  background: #00F;
+}
+
+.box {
+  width: 1000px;
+  padding: 10px;
+  background: #555;
+  margin:auto;
+}
+
+.navigation,
+.content,
+.sidebar {
+  display: inline-block;
+  vertical-align: top;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+.navigation,
+.sidebar {
+  width: 235px;
+}
+.content {
+  height: auto;
+  width: 472px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 15px;
+}
+
+section > header {
+  height: 50px;
+}
+section > article {
+  height: 150px;
+}
+section > footer {
+  height: 30px;
+}
