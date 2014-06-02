@@ -72,13 +72,20 @@ html {
   left: 83.3%
 }
 
-
+@media (max-width: 48rem) {
+  .column.two-thirds { 
+    width: 100%; 
+  }
+  .column.third { 
+    width: 50%; 
+  }
+  
+}
 
 header {
   font-weight: bold;
   font-size: 1.17rem;
   padding-top: 1rem;
-  margin-left: 2rem;
 }
 
 a {
