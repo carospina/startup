@@ -1,0 +1,52 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: tahoma;
+  text-align: center;
+}
+
+.hidden {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.error {
+  color: #F00;
+  font-weight: bold;
+}
+
+.tweet {
+  margin: 1rem;
+  border-radius: 10px;
+  border: 1px solid #AAA;
+}
+
+.tweet header {
+  text-align: left;
+  padding-left: 0.75rem;
+  padding-top: 0.75rem;
+  font-weight: bold;
+}
+
+.tweet img {
+  border-radius: 25px;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.tweet footer {
+  font-size: 0.75rem;
+} 
+
+.tweets {
+  float: right;
+  max-width: 30rem;
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-right: 1rem;
+}
