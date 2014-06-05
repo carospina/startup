@@ -50,3 +50,10 @@
   border-radius: 10px;
   margin-right: 1rem;
 }
+
+.validator {
+  clear: right;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  text-align: left;
+}
