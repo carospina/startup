@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*, 
+*:before, 
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -18,6 +20,10 @@
 .error {
   color: #F00;
   font-weight: bold;
+}
+
+.highlight {
+  background-color: #FFFF00;
 }
 
 .tweet {
