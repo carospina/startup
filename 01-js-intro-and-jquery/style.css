@@ -63,3 +63,9 @@
   padding-left: 1rem;
   text-align: left;
 }
+
+.buttovalid {
+  border:0;
+  width:88px;
+  height:31px;
+}
