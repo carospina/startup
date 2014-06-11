@@ -1,4 +1,3 @@
-
 function Movie() {
   this.atts = {};
 };
