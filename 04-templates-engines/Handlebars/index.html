@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="content" class="profile border">
+    </div>
+    <script id="entry-template" type="text/x-handlebars-template">
+      <header class="header border"> 
+        <img src="{{img}}" class="image">
+        {{name}}
+        <div class="data">
+          {{current}}
+        </div>
+        <div class="clearfix"></div>
+      </header> 
+      <article class="content border">
+        <div class = "information border">
+          <h3>ACTUALIDAD:</h3>
+          {{current}} 
+        </div>
+          {{#if experience}}
+            {{#each experience}}
+              <div class="border">
+                <h3>EXPERIENCIA:</h3> <br> {{experience}}
+              </diV>
+            {{/each}}  
+          {{/if}} 
+          {{#if language}}
+            <div class="border">
+              <h3>IDIOMAS:</h3>
+              <ul>
+              {{#each language}}
+                <li>{{name}}</li>
+              {{/each}}
+              </ul>
+            </div>  
+          {{/if}} 
+          {{#if skill}}
+            <div class="border">
+              <h3>APTITUDES:</h3>
+              <ul>
+              {{#each skill}}
+                <li>{{name}}</li>
+              {{/each}}
+              </ul>
+            </div>  
+          {{/if}}
+          {{#if education}}
+            <div class="border">
+              <h3>EDUCACIÓN:</h3>
+              <ul>
+              {{#each education}}
+                <li>{{institution}} <br> {{degree}} <br> {{year}}</li>
+              {{/each}}
+              </ul>
+            </div>  
+          {{/if}}
+      </article>
+      <footer class="footer border">
+        CONTACTO: {{contact}}
+      </footer>
+    </script>
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
