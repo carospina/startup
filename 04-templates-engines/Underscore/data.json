@@ -1,0 +1,39 @@
+{
+  "img":"image.jpg",
+	"name":"Carolina María Spina",
+	"current":"Estudiante de Ingeniería de Sistemas en Universidad Nacional del Centro de la Provincia de Buenos Aires",
+  "language": [
+    {
+      "name":"Español"
+    },
+    {
+      "name":"Inglés"
+    }
+  ],
+  "skill": [
+    {
+      "name":"JAVA"
+    },
+    {
+      "name":"C/C++"
+    },
+    {
+      "name":"HAXE"
+    }
+  ],
+  "experience": [
+  ],
+ "education": [
+    {
+      "institution":"Facultad de Ciencias Exactas, UNICEN",
+      "degree":"Ingeniería de Sistemas",
+      "year":"2011-Actualidad"
+    },
+		{
+      "institution":"Escuela de Educación Media N°10 José Manuel Estrada",
+      "degree":"Bachiller modalidad Ciencias Naturales",
+		  "year":"2010"
+    }
+	],
+	"contact":"spinacarolina@gmail.com"
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="content" class="profile border">
+    </div>
+    <script id="entry-template" type="text/template">
+      <header class="header border"> 
+        <img src="<%=img%>" class="image">
+        <%=name %>
+        <div class="data">
+          <%= current %>
+        </div>
+        <div class="clearfix"></div>
+      </header> 
+      <article class="content border">
+        <div class = "information border">
+          <h3>ACTUALIDAD:</h3>
+          <%=current%> 
+        </div>
+
+          <% if ( experience.length > 0 ) { %>
+            <% _.each(experience, function(exp) { %>
+              <div class="border">
+                <h3>EXPERIENCIA:</h3> <br> <%= exp %>
+              </diV>
+            <% }) %>  
+          <% } %> 
+
+          <% if ( language.length > 0 ) { %>
+            <div class="border">
+              <h3>IDIOMAS:</h3>
+              <ul>
+              <% _.each(language, function(lang) { %>
+                <li><%= lang.name %></li>
+              <% }) %>
+              </ul>
+            </div>  
+          <% } %> 
+
+          <% if (skill.length > 0) { %>
+            <div class="border">
+              <h3>APTITUDES:</h3>
+              <ul>
+              <% _.each (skill, function(sk) { %>
+                <li><%= sk.name%></li>
+              <% }) %>
+              </ul>
+            </div>  
+          <% } %>
+
+          <% if (education.length > 0) {%>
+            <div class="border">
+              <h3>EDUCACIÓN:</h3>
+              <ul>
+              <% _.each (education, function(ed) {%>
+                <li><%= ed.institution %> <br> <%= ed.degree %> <br> <%= ed.year %></li>
+              <% }) %>
+              </ul>
+            </div>  
+          <% } %>
+
+      </article>
+      <footer class="footer border">
+        CONTACTO: <%= contact %>
+      </footer>
+    </script>
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/underscore.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
