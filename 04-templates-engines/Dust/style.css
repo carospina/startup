@@ -1,0 +1,75 @@
+*, 
+*:before, 
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: tahoma;
+  font-size: 14px;
+}
+
+.border {
+    border: 2px solid #ddd9d9;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+body {
+  background: #e8e8e8;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+ul,
+li {
+  margin: 0;
+}
+
+.profile {
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: #fff;
+}
+
+.header {
+  font-size: 30px;
+  height: auto;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.data {
+  padding: 2rem;
+  font-size: 18px;
+}
+.content {
+  height: auto;
+}
+
+.footer {
+  font-size: 12px;
+  height: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.image {
+  height: 12rem;
+  width: 12rem;
+  background: #000;
+  border-radius: 5px;
+  float: left;
+  margin-right: 1rem;
+}
