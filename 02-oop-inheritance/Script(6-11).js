@@ -54,7 +54,7 @@ DownloadableMovie.prototype.download = function() {
 };
 
 var Social = {
-  share: function(friendname,what) {
+  share: function(friendname) {
     console.log('Shared with '+friendname);
   },
   like: function() {
@@ -84,9 +84,33 @@ Actor.prototype.get = function(attribute) {
   return this.atts[attribute];
 };
 
+//Example
+var m = new Movie();
+m.set('title','Avatar');
+m.set('year','2009');
+var samWorthington = new Actor();
+samWorthington.set('name','Sam Worthington');
+var zoeSaldaña = new Actor();
+zoeSaldaña.set('name','Zoe Saldaña');
+m.set('actors',[samWorthington,zoeSaldaña]);
+console.log('Title of the movie: '+m.get('title'));
+console.log('Year: '+m.get('year'));
+extend(m,Social);
+m.like();
+m.addSubscriber(MovieObserver);
+m.play();
+console.log('...');
+m.stop();
+m.share('Facebook friends');
+console.log('');
+console.log('Downloadable movie:');
+d = new DownloadableMovie();
+d.set('title','The Hobbit');
+d.download();
+
 /* 11. Show how you would add an array of actors to a Movie object
   actor1 = new Actor();
   actor2 = new Actor();
   m = new Movie();
   m.set('actors',[actor1,actor2]);
-  /*
+*/
