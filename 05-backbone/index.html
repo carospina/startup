@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="moviesapp">
+      <div class="newmovie border">
+        <u>TITLE:</u> <input id="newtitle" type="text"> <br>
+        <u>YEAR:</u> <input id="newyear" type="text">
+        <p><u>DIRECTOR:</u> <input id="newdirector" type="text"></p>
+        <p><u>SYNOPSIS:</u> <br><textarea id="newsynopsis" rows="5" cols="45"></textarea> </p>
+        <button class="bnewmovie">Add Movie</button>
+      </div> 
+    </div> 
+    <script id="moviedata" type="text/template">
+      <article class="border">
+        <div class="info">
+          <h3><%= title %></h3>
+          <button class="remove">X</button>
+          <h5><%= year %></h5>
+          <p><u>DIRECTOR:</u> <%= director %></p>
+          <p><u>SYNOPSIS:</u> <%= synopsis %> </p>
+        </div>
+        <div class="edit">
+          <input id="ititle" type="text" value="<%= title %>">
+          <input id="iyear" type="text" value="<%= year %>">
+          <p><u>DIRECTOR:</u> <input id="idirector" type="text" value="<%= director %>"></p>
+          <p><u>SYNOPSIS:</u> <br><textarea id="isynopsis" rows="5" cols="45"> <%= synopsis %></textarea> </p>
+          <button class="save">Save</button>
+        </div>
+      </article>
+    </script>
+    <script data-main="main" src="lib/require.js"></script>
+  </body>
+</html>
