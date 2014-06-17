@@ -1,0 +1,38 @@
+*, 
+*:before, 
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: tahoma;
+}
+
+button {
+  width: 10rem;
+  font-weight: bold;
+}
+
+.dropArea {
+  background: #ccc;
+  height: auto;
+  width: 60rem;
+  min-height: 30rem;
+  margin: auto;
+  border: 4px dashed;
+  float: right;
+}
+
+.dragArea {
+  border: 2px dashed;
+  float: left;
+  min-height: 30rem;
+  height: auto;
+  width: calc(100% - 61rem);
+  font-size: 20px;
+  color: #bbb;
+  text-align: center;
+  
+}
