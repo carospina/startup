@@ -1,0 +1,30 @@
+*, 
+*:before, 
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.circle {
+  fill: #ccc;
+}
+
+.rectangle {
+  fill: #ddd;
+  stroke-width: 1px;
+  stroke: #000;
+  fill-opacity: 0.4;
+}
+
+.ellipse {
+  fill: #c9a9a9;
+}
+
+.triangle {
+  fill: #90c68f;
+}
+
+.ellipse {
+  fill: #f2d7ab;
+}
